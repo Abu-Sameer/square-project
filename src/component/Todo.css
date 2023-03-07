@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  margin: 0 auto;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'raleway', sans-serif;
+}
+
+.content {
+  border: 5px rgb(45, 152, 176) solid;
+  border-radius: 5px;
+  font-size: 17px;
+  background-color: rgb(131, 220, 232);
+  padding: 20px;
+  margin-top: 10px;
+  box-shadow: 10px 10px 5px black;
+}
+
+table {
+  width: 100%;
+  border: 3px solid gray;
+  padding: 5px;
+  border-radius: 7px;
+}
+
+td:first-child {
+  width: 100%;
+}
+
+td:last-child {
+  min-width: 125px;
+}
+
+th {
+  text-align: left;
+  text-transform: capitalize;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+}
+
+tbody {
+  text-transform: capitalize;
+}
+
+input,
+button {
+  font-size: 15px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px gray solid;
+  outline: none;
+  margin: 10px 5px 0 0px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.add {
+  background-color: blue;
+  padding: 8px 50px;
+  color: white;
+  margin-left: 2rem;
+  border: none;
+  font-weight: bold;
+}
+
+.edit {
+  background-color: dodgerblue;
+  padding: 8px 10px;
+  color: white;
+  border: none;
+  font-weight: bold;
+}
+
+.delete {
+  background-color: red;
+  padding: 8px 10px;
+  color: white;
+  border: none;
+  font-weight: bold;
+}
+
+.save {
+  background-color: rgb(59, 108, 59);
+  padding: 8px 10px;
+  color: white;
+  border: none;
+  font-weight: bold;
+}
+
+.back {
+  background-color: black;
+  padding: 8px 10px;
+  color: white;
+  border: none;
+  font-weight: bold;
+}
+
+button.add:active {
+  scale: 90%;
+}
+
+.task {
+  cursor: pointer;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+@media (max-width: 500px) {
+  .main {
+    width: 90%;
+  }
+  .add {
+    padding: 8px 30px;
+  }
+  table {
+    width: 100%;
+  }
+
+  td:first-child {
+    width: 100%;
+  }
+
+  td:last-child {
+    min-width: 125px;
+  }
+
+  .create-todo {
+    width: 40%;
+  }
+}
